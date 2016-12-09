@@ -2,6 +2,6 @@ module.exports = {
     entry: "./js/index.js",
     output: {
         path: __dirname,
-        filename: "./static/js/bundle.js"
+        filename: "./static/js/index.js"
     }
 };

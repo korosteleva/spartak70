@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'latobold';
-  src: url("lato-bold-webfont.woff2") format('woff2'), url("lato-bold-webfont.woff") format('woff');
+  src: url("../../css/fonts/lato-bold-webfont.woff2") format('woff2'), url("../../css/fonts/lato-bold-webfont.woff") format('woff');
   font-weight: normal;
   font-style: normal;
 }
 h1 {
   font-family: 'latobold', Arial;
-  color: #006400;
+  color: #f00;
 }

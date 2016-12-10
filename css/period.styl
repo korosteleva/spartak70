@@ -1,0 +1,29 @@
+.period
+    text-align center
+    padding-top 32px
+
+    &-year
+        font-family 'litteraplainregular', sans-serif
+        color spartakOrangeLight
+        font-size 48px
+        line-height 48px
+        margin-bottom 10px
+
+        @media (max-width screenXsm)
+            font-size 36px
+
+    &-number
+        background transparent url('../../css/images/period-number.svg') no-repeat 50% 50%
+        background-size contain
+        font-family 'garamondc', serif
+        color spartakOrangeLighter
+        font-size 16px
+        line-height 38px
+        height 34px
+
+        @media (max-width screenXsm)
+            font-size 12px
+
+    &-dark
+        .period-number
+            color spartakOrangeLight

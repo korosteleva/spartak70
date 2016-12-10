@@ -1,10 +1,395 @@
 @font-face {
-  font-family: 'latobold';
-  src: url("../../css/fonts/lato-bold-webfont.woff2") format('woff2'), url("../../css/fonts/lato-bold-webfont.woff") format('woff');
+  font-family: 'garamondc';
+  src: url("../../css/fonts/garamondc/garamondc.woff2") format('woff2'), url("../../css/fonts/garamondc/garamondc.woff") format('woff');
   font-weight: normal;
   font-style: normal;
 }
-h1 {
-  font-family: 'latobold', Arial;
-  color: #f00;
+@font-face {
+  font-family: 'litteraplainbold';
+  src: url("../../css/fonts/litteraplain/litteraplain-bold.woff2") format('woff2'), url("../../css/fonts/litteraplain/litteraplain-bold.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'litteraplainbook';
+  src: url("../../css/fonts/litteraplain/litteraplain-book.woff2") format('woff2'), url("../../css/fonts/litteraplain/litteraplain-book.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'litteraplainlight';
+  src: url("../../css/fonts/litteraplain/litteraplain-light.woff2") format('woff2'), url("../../css/fonts/litteraplain/litteraplain-light.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'litteraplainmedium';
+  src: url("../../css/fonts/litteraplain/litteraplain-medium.woff2") format('woff2'), url("../../css/fonts/litteraplain/litteraplain-medium.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'litteraplainregular';
+  src: url("../../css/fonts/litteraplain/litteraplain-regular.woff2") format('woff2'), url("../../css/fonts/litteraplain/litteraplain-regular.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'litteratextbold';
+  src: url("../../css/fonts/litteratext/litteratext-bold.woff2") format('woff2'), url("../../css/fonts/litteratext/litteratext-bold.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'litteratextbook';
+  src: url("../../css/fonts/litteratext/litteratext-book.woff2") format('woff2'), url("../../css/fonts/litteratext/litteratext-book.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'litteratextlight';
+  src: url("../../css/fonts/litteratext/litteratext-light.woff2") format('woff2'), url("../../css/fonts/litteratext/litteratext-light.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'litteratextmedium';
+  src: url("../../css/fonts/litteratext/litteratext-medium.woff2") format('woff2'), url("../../css/fonts/litteratext/litteratext-medium.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'litteratextregular';
+  src: url("../../css/fonts/litteratext/litteratext-regular.woff2") format('woff2'), url("../../css/fonts/litteratext/litteratext-regular.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+body {
+  min-width: 300px;
+}
+body.page-black {
+  background: #000;
+}
+body.page-white {
+  background: #fff;
+}
+.container {
+  max-width: 560px;
+  margin: 0 auto;
+  padding: 0 15px;
+  position: relative;
+}
+p {
+  color: #f2e5d3;
+  font-family: Times, serif;
+  font-size: 20px;
+  line-height: 28px;
+  margin: 34px 0;
+  clear: both;
+}
+p.black {
+  color: #000;
+}
+p.first-block {
+  margin-top: 24px;
+}
+.highlight {
+  color: #cf0a2c;
+  font-family: 'litteraplainregular', sans-serif;
+  font-size: 48px;
+  line-height: 52px;
+  max-width: 640px;
+  margin: 0 auto;
+  margin-bottom: 76px;
+  padding: 0 15px;
+}
+.highlight.orange {
+  color: #fab078;
+}
+.main {
+  padding-top: 64px;
+}
+header {
+  background: #cf0a2c;
+  width: 100%;
+  height: 64px;
+  position: fixed;
+  overflow-x: auto;
+  z-index: 5;
+}
+header .timeline {
+  max-width: 604px;
+  margin: 0 auto;
+  padding: 31px 30px 0 30px;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header .timeline-element {
+  position: relative;
+  text-align: center;
+}
+header .timeline-element.active .timeline-hint {
+  display: block;
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+header .timeline-element.active .timeline-number {
+  background: transparent url("../../css/images/timeline-active.svg") no-repeat 50% 50%;
+}
+header .timeline-hint {
+  display: none;
+  font-family: Times, serif;
+  font-size: 13px;
+  line-height: 16px;
+  color: #f2e5d3;
+  white-space: nowrap;
+}
+header .timeline-number {
+  width: 38px;
+  height: 21px;
+  display: block;
+  font-family: 'garamondc', serif;
+  font-size: 10px;
+  line-height: 22px;
+  color: #f2e5d3;
+  text-decoration: none;
+}
+header .timeline-number:hover {
+  color: #fff;
+}
+.footer-image {
+  width: 100%;
+  height: 0;
+  padding-top: 60%;
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+  background-size: contain;
+  position: relative;
+}
+.footer-image-title {
+  position: absolute;
+  right: 0;
+  top: 0;
+  -webkit-transform: translate(-50%, -100%);
+          transform: translate(-50%, -100%);
+}
+@media (max-width: 720px) {
+  .footer-image-title {
+    display: none;
+  }
+}
+.image-capture {
+  font-family: 'garamondcitalic', serif;
+  color: #d2956b;
+  font-size: 14px;
+  line-height: 20px;
+}
+.footer-nav {
+  text-align: center;
+  margin-top: 60px;
+}
+.footer-nav-link {
+  position: relative;
+  font-family: Times, serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #cf0a2c;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 5.25;
+}
+.footer-nav-link:after {
+  content: '';
+  position: absolute;
+  background: transparent url("../../css/images/arrow-right.svg") no-repeat 50% 50%;
+  width: 5px;
+  height: 17px;
+  bottom: 0;
+  right: -7px;
+}
+.footer-nav-link:hover {
+  color: #d2956b;
+}
+.footer-nav-link:hover:after {
+  background-image: url("../../css/images/arrow-right-hover.svg");
+}
+.sharing {
+  text-align: center;
+  padding-top: 7px;
+  margin-bottom: 60px;
+}
+.sharing .ya-share2__item {
+  width: 44px;
+  margin: 0 !important;
+}
+.sharing .ya-share2__icon {
+  height: 30px !important;
+}
+.sharing .ya-share2__badge {
+  background: transparent !important;
+}
+.sharing .ya-share2__item_service_facebook {
+  text-align: left !important;
+}
+.sharing .ya-share2__item_service_twitter {
+  text-align: center !important;
+  margin-top: 3px !important;
+  margin-left: 3px !important;
+}
+.sharing .ya-share2__item_service_vkontakte {
+  text-align: right !important;
+  margin-top: 3px !important;
+}
+.sharing .ya-share2__item_service_vkontakte .ya-share2__icon {
+  width: 28px !important;
+}
+.sharing-white .ya-share2__item_service_facebook .ya-share2__icon {
+  background: transparent url("../../css/images/sharing/fb-white.svg") no-repeat 50% 50% !important;
+}
+.sharing-white .ya-share2__item_service_twitter .ya-share2__icon {
+  background: transparent url("../../css/images/sharing/tw-white.svg") no-repeat 50% 50% !important;
+}
+.sharing-white .ya-share2__item_service_vkontakte .ya-share2__icon {
+  background: transparent url("../../css/images/sharing/vk-white.svg") no-repeat 50% 50% !important;
+}
+.sharing-black .ya-share2__item_service_facebook .ya-share2__icon {
+  background: transparent url("../../css/images/sharing/fb-black.svg") no-repeat 50% 50% !important;
+}
+.sharing-black .ya-share2__item_service_twitter .ya-share2__icon {
+  background: transparent url("../../css/images/sharing/tw-black.svg") no-repeat 50% 50% !important;
+}
+.sharing-black .ya-share2__item_service_vkontakte .ya-share2__icon {
+  background: transparent url("../../css/images/sharing/vk-black.svg") no-repeat 50% 50% !important;
+}
+.period {
+  text-align: center;
+  padding-top: 32px;
+}
+.period-year {
+  font-family: 'litteraplainregular', sans-serif;
+  color: #fab078;
+  font-size: 48px;
+  line-height: 48px;
+  margin-bottom: 10px;
+}
+@media (max-width: 480px) {
+  .period-year {
+    font-size: 36px;
+  }
+}
+.period-number {
+  background: transparent url("../../css/images/period-number.svg") no-repeat 50% 50%;
+  background-size: contain;
+  font-family: 'garamondc', serif;
+  color: #f2e5d3;
+  font-size: 16px;
+  line-height: 38px;
+  height: 34px;
+}
+@media (max-width: 480px) {
+  .period-number {
+    font-size: 12px;
+  }
+}
+.period-dark .period-number {
+  color: #fab078;
 }

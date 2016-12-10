@@ -1,0 +1,68 @@
+.quote-score {
+  float: right;
+  width: 180px;
+  font-family: 'litteraplainregular', sans-serif;
+  font-size: 24px;
+  line-height: 34px;
+  padding-left: 50px;
+  padding-top: 5px;
+  color: #d2956b;
+}
+.quote-score img {
+  margin-left: 40px;
+  margin-bottom: 5px;
+}
+@media (max-width: 480px) {
+  .quote-score {
+    float: none;
+    display: block;
+    width: 100%;
+    margin: 34px 0;
+    padding: 0;
+  }
+  .quote-score img {
+    margin: 0 auto 10px auto;
+    display: block;
+  }
+}
+.quote-captain {
+  float: right;
+  position: relative;
+  width: 145px;
+  height: 360px;
+}
+.quote-captain img {
+  position: absolute;
+  top: -10px;
+  right: -31px;
+}
+.quote-captain .image-capture {
+  position: absolute;
+  right: -150px;
+  bottom: 40px;
+  text-align: center;
+}
+@media (max-width: 480px) {
+  .quote-captain {
+    display: none;
+  }
+}
+@media (min-width: 480px) and (max-width: 900px) {
+  .quote-captain {
+    padding-left: 10px;
+  }
+  .quote-captain img {
+    right: 0;
+  }
+  .quote-captain .image-capture {
+    display: none;
+  }
+}
+.gallery img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  opacity: 0.6;
+}

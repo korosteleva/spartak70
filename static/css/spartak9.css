@@ -1,0 +1,19 @@
+.spartak9-game-wrapper {
+  margin-bottom: 60px;
+}
+.spartak9-game-wrapper img {
+  width: 100%;
+}
+.spartak9-players-wrapper {
+  position: relative;
+}
+.spartak9-players-wrapper img {
+  width: 100%;
+}
+.spartak9-players-wrapper .image-capture {
+  position: absolute;
+  -webkit-transform: translateX(100%) translateY(100%);
+          transform: translateX(100%) translateY(100%);
+  right: -40px;
+  top: 50%;
+}

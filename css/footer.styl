@@ -1,0 +1,110 @@
+.footer-image
+    width 100%
+    height 0
+    padding-top 60%
+    background-repeat no-repeat
+    background-position 50% 100%
+    background-size contain
+    position relative
+
+    &-title
+        position absolute
+        right 0
+        top 0
+        transform translate(-50%, -100%)
+
+        @media (max-width screenSm)
+            display none
+
+.image-capture
+    font-family 'garamondcitalic', serif
+    color spartakOrange
+    font-size 14px
+    line-height 20px
+
+.footer-nav
+    text-align center
+    margin-top 60px
+
+    &-link
+        position relative
+        font-family Times, serif
+        text-transform uppercase
+        text-decoration none
+        color spartakRed
+        font-size 14px
+        line-height 18px
+        letter-spacing 5.25
+
+        &:after
+            content ''
+            position absolute
+            background transparent url('../../css/images/arrow-right.svg') no-repeat 50% 50%
+            width 5px
+            height 17px
+            bottom 0
+            right -7px
+
+        &:hover
+            color spartakOrange
+
+            &:after
+                background-image url('../../css/images/arrow-right-hover.svg')
+
+.sharing
+    text-align center
+    padding-top 7px
+    margin-bottom 60px
+
+    .ya-share2__item
+        width 44px
+        margin 0 !important
+
+    .ya-share2__icon
+        height 30px !important
+
+    .ya-share2__badge
+        background transparent !important
+
+    .ya-share2__item_service_facebook
+        text-align left !important
+
+    .ya-share2__item_service_twitter
+        text-align center !important
+        margin-top 3px!important
+        margin-left 3px!important
+
+    .ya-share2__item_service_vkontakte
+        text-align right !important
+        margin-top 3px!important
+
+        .ya-share2__icon
+            width 28px !important
+
+
+    &-white
+        .ya-share2__item_service_facebook
+            .ya-share2__icon
+                background transparent url('../../css/images/sharing/fb-white.svg') no-repeat 50% 50% !important
+
+        .ya-share2__item_service_twitter
+            .ya-share2__icon
+                background transparent url('../../css/images/sharing/tw-white.svg') no-repeat 50% 50% !important
+
+        .ya-share2__item_service_vkontakte
+            .ya-share2__icon
+                background transparent url('../../css/images/sharing/vk-white.svg') no-repeat 50% 50% !important
+
+
+    &-black
+        .ya-share2__item_service_facebook
+            .ya-share2__icon
+                background transparent url('../../css/images/sharing/fb-black.svg') no-repeat 50% 50% !important
+
+        .ya-share2__item_service_twitter
+            .ya-share2__icon
+                background transparent url('../../css/images/sharing/tw-black.svg') no-repeat 50% 50% !important
+
+        .ya-share2__item_service_vkontakte
+            .ya-share2__icon
+                background transparent url('../../css/images/sharing/vk-black.svg') no-repeat 50% 50% !important

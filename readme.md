@@ -11,4 +11,4 @@ https://korosteleva.github.io/spartak70/
 
 
 Сборка стилей
-`stylus -w ./css/index.styl -o ./static/css/index.css`
+`stylus -w ./css/index.styl -o ./static/css/index.css -u autoprefixer-stylus`

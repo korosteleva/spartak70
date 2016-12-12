@@ -1,0 +1,66 @@
+.spartak-bg-red {
+  background-image: url("../../css/images/spartak5-bg.png");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: contain;
+  position: relative;
+  padding-bottom: 60%;
+}
+.spartak-bg-red .container {
+  z-index: 1;
+}
+.quote-mayorov {
+  float: left;
+  position: relative;
+  left: -140px;
+  top: -9px;
+  width: 138px;
+  height: 560px;
+}
+.quote-mayorov img {
+  width: 280px;
+}
+.quote-mayorov .image-capture {
+  position: absolute;
+  left: -39px;
+  bottom: -63px;
+}
+.quote-blinov {
+  float: right;
+  position: relative;
+  width: 135px;
+  right: -15px;
+  bottom: 37px;
+}
+.quote-blinov img {
+  width: 240px;
+}
+.quote-blinov .image-capture {
+  position: absolute;
+  right: -160px;
+  bottom: -61px;
+}
+.spartak5-zinger-wrapper {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.spartak5-zinger-wrapper:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  right: 0;
+  width: 100%;
+  height: 3px;
+  background: #000;
+}
+.spartak5-zinger-wrapper .image-capture {
+  position: absolute;
+  right: 115px;
+  bottom: 58%;
+}
+.footer-image {
+  padding-top: 34px;
+}

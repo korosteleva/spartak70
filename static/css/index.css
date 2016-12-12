@@ -112,6 +112,9 @@ p {
 p.black {
   color: #000;
 }
+p.white {
+  color: #fff;
+}
 p.first-block {
   margin-top: 24px;
 }
@@ -133,6 +136,9 @@ p.first-block {
 }
 .spartak-bg-orange {
   background: #f2e5d3;
+}
+.spartak-bg-red {
+  background: #a00a24;
 }
 .main {
   padding-top: 64px;

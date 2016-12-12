@@ -1,69 +1,3 @@
-@font-face {
-  font-family: 'garamondc';
-  src: url("../../css/fonts/garamondc/garamondc.woff2") format('woff2'), url("../../css/fonts/garamondc/garamondc.woff") format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'litteraplainbold';
-  src: url("../../css/fonts/litteraplain/litteraplain-bold.woff2") format('woff2'), url("../../css/fonts/litteraplain/litteraplain-bold.woff") format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'litteraplainbook';
-  src: url("../../css/fonts/litteraplain/litteraplain-book.woff2") format('woff2'), url("../../css/fonts/litteraplain/litteraplain-book.woff") format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'litteraplainlight';
-  src: url("../../css/fonts/litteraplain/litteraplain-light.woff2") format('woff2'), url("../../css/fonts/litteraplain/litteraplain-light.woff") format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'litteraplainmedium';
-  src: url("../../css/fonts/litteraplain/litteraplain-medium.woff2") format('woff2'), url("../../css/fonts/litteraplain/litteraplain-medium.woff") format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'litteraplainregular';
-  src: url("../../css/fonts/litteraplain/litteraplain-regular.woff2") format('woff2'), url("../../css/fonts/litteraplain/litteraplain-regular.woff") format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'litteratextbold';
-  src: url("../../css/fonts/litteratext/litteratext-bold.woff2") format('woff2'), url("../../css/fonts/litteratext/litteratext-bold.woff") format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'litteratextbook';
-  src: url("../../css/fonts/litteratext/litteratext-book.woff2") format('woff2'), url("../../css/fonts/litteratext/litteratext-book.woff") format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'litteratextlight';
-  src: url("../../css/fonts/litteratext/litteratext-light.woff2") format('woff2'), url("../../css/fonts/litteratext/litteratext-light.woff") format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'litteratextmedium';
-  src: url("../../css/fonts/litteratext/litteratext-medium.woff2") format('woff2'), url("../../css/fonts/litteratext/litteratext-medium.woff") format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'litteratextregular';
-  src: url("../../css/fonts/litteratext/litteratext-regular.woff2") format('woff2'), url("../../css/fonts/litteratext/litteratext-regular.woff") format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
 html,
 body,
 div,
@@ -264,8 +198,8 @@ header .timeline-number:hover {
 }
 .footer-image-title {
   position: absolute;
-  right: 0;
-  top: 0;
+  right: 16px;
+  top: 2px;
   -webkit-transform: translate(-50%, -100%);
           transform: translate(-50%, -100%);
 }
@@ -279,6 +213,7 @@ header .timeline-number:hover {
   color: #d2956b;
   font-size: 14px;
   line-height: 20px;
+  text-align: center;
 }
 .footer-nav {
   text-align: center;
@@ -359,14 +294,14 @@ header .timeline-number:hover {
 }
 .period {
   text-align: center;
-  padding-top: 32px;
+  padding-top: 36px;
 }
 .period-year {
   font-family: 'litteraplainregular', sans-serif;
   color: #fab078;
   font-size: 48px;
   line-height: 48px;
-  margin-bottom: 10px;
+  margin-bottom: 7px;
 }
 @media (max-width: 480px) {
   .period-year {

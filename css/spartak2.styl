@@ -1,19 +1,26 @@
 @import "variables"
 
 .spartak2-wrapper
-    background #000000
-
-.spartak2-top-bg
-    width 100%
-    height 0
-    padding-top 65%
+    background-color #000000
+    background-image url('../../css/images/spartak2-bg.png')
     background-repeat no-repeat
     background-position 50% 100%
     background-size contain
     position relative
+    padding-bottom 48%
 
     .image-capture
         position absolute
-        right 50px
-        bottom -34px
+        right 100px
+        bottom -47px
         transform translateY(100%)
+
+        @media (max-width 1060px)
+            display none
+
+.footer-image
+    padding-top 60px
+
+    &-title
+        right -8px
+        top 37px

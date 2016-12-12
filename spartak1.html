@@ -2,6 +2,7 @@
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="static/css/font/garamondc-italic.css">
+    <link rel="stylesheet" href="static/css/swiper.css">
     <link rel="stylesheet" href="static/css/index.css">
     <link rel="stylesheet" href="static/css/spartak1.css">
 </head>
@@ -68,11 +69,32 @@
     </ul>
 </header>
 
-<div class="main">
+<div class="main" style="position: relative">
     <div class="gallery">
-        <img src="static/images/1/01.png">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <img class="swiper-slide" src="static/images/1/gallery/01.png">
+                <img class="swiper-slide" src="static/images/1/gallery/02.png">
+                <img class="swiper-slide" src="static/images/1/gallery/03.png">
+                <img class="swiper-slide" src="static/images/1/gallery/04.png">
+                <img class="swiper-slide" src="static/images/1/gallery/05.png">
+                <img class="swiper-slide" src="static/images/1/gallery/06.png">
+                <img class="swiper-slide" src="static/images/1/gallery/07.png">
+                <img class="swiper-slide" src="static/images/1/gallery/08.png">
+                <img class="swiper-slide" src="static/images/1/gallery/09.png">
+                <img class="swiper-slide" src="static/images/1/gallery/10.png">
+                <img class="swiper-slide" src="static/images/1/gallery/11.png">
+                <img class="swiper-slide" src="static/images/1/gallery/12.png">
+                <img class="swiper-slide" src="static/images/1/gallery/13.png">
+                <img class="swiper-slide" src="static/images/1/gallery/14.png">
+                <img class="swiper-slide" src="static/images/1/gallery/15.png">
+                <img class="swiper-slide" src="static/images/1/gallery/16.png">
+            </div>
+        </div>
+        <div class="gallery-bg"></div>
     </div>
-    <div class="container">
+
+    <div class="container spartak1-top-wrapper">
         <div class="period">
             <div class="period-year">1946–1951</div>
             <div class="period-number">I</div>
@@ -134,9 +156,11 @@
         </div>
     </div>
 
-    <div class="footer-image" style="background-image: url('./static/images/1/spartak1-footer.png')">
+    <div class="footer-image">
+        <img class="full-width" src="./static/images/1/footer.png">
         <span class="footer-image-title image-capture">«Спартак»<br>в сезоне 1948/49</span>
     </div>
 </footer>
+<script src="static/js/spartak1.js"></script>
 </body>
 </html>

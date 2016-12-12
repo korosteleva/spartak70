@@ -58,11 +58,27 @@
     display: none;
   }
 }
-.gallery img {
+.spartak1-top-wrapper {
+  z-index: 2;
+}
+.main {
+  position: relative;
+}
+.gallery {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
+}
+.gallery-bg {
+  position: absolute;
   width: 100%;
-  opacity: 0.6;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.6);
+  z-index: 1;
+}
+.gallery img {
+  width: 100%;
 }

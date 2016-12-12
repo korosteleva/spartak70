@@ -181,6 +181,9 @@ p.black {
 p.first-block {
   margin-top: 24px;
 }
+.full-width {
+  width: 100%;
+}
 .highlight {
   color: #cf0a2c;
   font-family: 'litteraplainregular', sans-serif;
@@ -257,12 +260,6 @@ header .timeline-number:hover {
   color: #fff;
 }
 .footer-image {
-  width: 100%;
-  height: 0;
-  padding-top: 60%;
-  background-repeat: no-repeat;
-  background-position: 50% 100%;
-  background-size: contain;
   position: relative;
 }
 .footer-image-title {

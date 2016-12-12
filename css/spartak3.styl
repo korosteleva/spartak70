@@ -1,0 +1,37 @@
+@import "variables"
+
+.players-wrapper
+    position relative
+
+    .image-capture
+        position absolute
+        right -25px
+        bottom 0
+        transform translateX(100%)
+        top 50%
+        margin-top 11px
+
+        @media (max-width screenMd)
+            display none
+
+.quote-player
+    float right
+    position relative
+    width 140px
+    height 365px
+
+    img
+        position absolute
+        top 0
+        left 28px
+
+    .image-capture
+        position absolute
+        right -130px
+        top 104px
+
+.footer-image
+    padding-top 40px
+
+    &-title
+        right -47px

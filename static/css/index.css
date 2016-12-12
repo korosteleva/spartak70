@@ -131,6 +131,9 @@ p.first-block {
 .highlight.orange {
   color: #fab078;
 }
+.spartak-bg-orange {
+  background: #f2e5d3;
+}
 .main {
   padding-top: 64px;
 }

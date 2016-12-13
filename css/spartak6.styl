@@ -1,7 +1,47 @@
-.spartak6
-    &-top-wrapper
-        background-repeat no-repeat
-        background-position 50% 0
+@import "variables"
 
-        .period
-            margin-bottom 580px
+.spartak6-top-wrapper
+    position relative
+
+    .period-wrapper
+        position absolute
+        top 0
+        left 50%
+        width 100%
+        transform translateX(-50%)
+
+    .text-wrapper
+        @media (min-width screenMd)
+            margin-top -150px
+        @media (max-width screenMd)
+            margin-top -50px
+
+.quote-yakushev
+    float right
+    position relative
+    width 140px
+    right 59px
+    bottom 14px
+
+    img
+        width 480px
+
+    .image-capture
+        position absolute
+        right -235px
+        bottom -40px
+
+.quote-zimin
+    float right
+    position relative
+    width 140px
+    right -18px
+    bottom 31px
+
+    img
+        width 380px
+
+    .image-capture
+        position absolute
+        right -161px
+        bottom -158px

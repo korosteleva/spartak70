@@ -1,7 +1,51 @@
 .spartak6-top-wrapper {
-  background-repeat: no-repeat;
-  background-position: 50% 0;
+  position: relative;
 }
-.spartak6-top-wrapper .period {
-  margin-bottom: 580px;
+.spartak6-top-wrapper .period-wrapper {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 100%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+@media (min-width: 960px) {
+  .spartak6-top-wrapper .text-wrapper {
+    margin-top: -150px;
+  }
+}
+@media (max-width: 960px) {
+  .spartak6-top-wrapper .text-wrapper {
+    margin-top: -50px;
+  }
+}
+.quote-yakushev {
+  float: right;
+  position: relative;
+  width: 140px;
+  right: 59px;
+  bottom: 14px;
+}
+.quote-yakushev img {
+  width: 480px;
+}
+.quote-yakushev .image-capture {
+  position: absolute;
+  right: -235px;
+  bottom: -40px;
+}
+.quote-zimin {
+  float: right;
+  position: relative;
+  width: 140px;
+  right: -18px;
+  bottom: 31px;
+}
+.quote-zimin img {
+  width: 380px;
+}
+.quote-zimin .image-capture {
+  position: absolute;
+  right: -161px;
+  bottom: -158px;
 }

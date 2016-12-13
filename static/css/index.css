@@ -326,6 +326,9 @@ header .timeline-number:hover {
   line-height: 38px;
   height: 34px;
 }
+.period-number-orange {
+  background-image: url("../../css/images/period-number-orange.svg");
+}
 @media (max-width: 480px) {
   .period-number {
     font-size: 12px;

@@ -3,7 +3,16 @@
   top: 33px;
 }
 .spartak-theme {
-  background: transparent url("../../css/images/spartak.svg") no-repeat 50% 10px;
+  position: relative;
+  overflow: hidden;
+}
+.spartak-theme .spartak {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  right: 0;
+  height: 920px;
+  background: transparent url("../../css/images/spartak.svg") no-repeat 50% 0;
 }
 .quote-bobrov {
   float: right;

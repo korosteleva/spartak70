@@ -1,5 +1,4 @@
 var diagonal = document.querySelector('.diagonal');
-console.log(diagonal);
 
 function parallax(){
     var scrollTop = Number(window.pageYOffset) * .3;

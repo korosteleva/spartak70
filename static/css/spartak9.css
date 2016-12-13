@@ -1,3 +1,27 @@
+@-webkit-keyframes fade {
+  from {
+    -webkit-transform: translateY(0.25em);
+            transform: translateY(0.25em);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    -webkit-transform: translateY(0.25em);
+            transform: translateY(0.25em);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
 .spartak9-game-wrapper {
   margin-bottom: 60px;
 }
@@ -16,4 +40,22 @@
           transform: translateX(100%) translateY(100%);
   right: -40px;
   top: 50%;
+  text-align: center;
+}
+.spartak9-top-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+.spartak9-top-wrapper .diagonal {
+  width: 100%;
+  height: 330px;
+  background: #cf0a2c;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 33%;
+  -webkit-transform: skewX(-48deg) skewY(-44deg);
+          transform: skewX(-48deg) skewY(-44deg);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
 }

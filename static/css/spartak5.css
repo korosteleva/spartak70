@@ -7,6 +7,11 @@
   padding-bottom: 60%;
   background-attachment: fixed;
 }
+@media (min-width: 1024px) {
+  .spartak-bg-red {
+    background-size: cover;
+  }
+}
 .spartak-bg-red .container {
   z-index: 1;
 }

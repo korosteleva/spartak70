@@ -5,6 +5,7 @@
   background-size: contain;
   position: relative;
   padding-bottom: 60%;
+  background-attachment: fixed;
 }
 .spartak-bg-red .container {
   z-index: 1;

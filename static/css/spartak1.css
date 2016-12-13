@@ -1,3 +1,27 @@
+@-webkit-keyframes fade {
+  from {
+    -webkit-transform: translateY(0.25em);
+            transform: translateY(0.25em);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    -webkit-transform: translateY(0.25em);
+            transform: translateY(0.25em);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
 .quote-score {
   float: right;
   width: 180px;
@@ -64,10 +88,16 @@
   position: relative;
 }
 .gallery {
-  position: absolute;
-  top: 0;
+  position: fixed;
+  top: 64px;
   left: 0;
   right: 0;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  padding-bottom: 60%;
+  background-size: cover;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 .gallery-bg {
   position: absolute;
@@ -77,7 +107,4 @@
   bottom: 0;
   background: rgba(0,0,0,0.6);
   z-index: 1;
-}
-.gallery img {
-  width: 100%;
 }

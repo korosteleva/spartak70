@@ -1,3 +1,27 @@
+@-webkit-keyframes fade {
+  from {
+    -webkit-transform: translateY(0.25em);
+            transform: translateY(0.25em);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    -webkit-transform: translateY(0.25em);
+            transform: translateY(0.25em);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
 html,
 body,
 div,
@@ -130,6 +154,13 @@ p.first-block {
   margin: 0 auto;
   margin-bottom: 76px;
   padding: 0 15px;
+}
+.highlight:not(.no-animate) {
+  opacity: 0;
+}
+.highlight.animate {
+  -webkit-animation: 0.5s 0.5s fade forwards ease-out;
+          animation: 0.5s 0.5s fade forwards ease-out;
 }
 .highlight.orange {
   color: #fab078;
@@ -304,6 +335,8 @@ header .timeline-number:hover {
 .period {
   text-align: center;
   padding-top: 36px;
+  -webkit-animation: 0.5s 0.5s fade backwards ease-out;
+          animation: 0.5s 0.5s fade backwards ease-out;
 }
 .period-year {
   font-family: 'litteraplainregular', sans-serif;

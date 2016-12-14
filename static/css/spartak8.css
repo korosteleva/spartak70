@@ -1,0 +1,27 @@
+.quote-shalimov {
+  float: right;
+  position: relative;
+  width: 140px;
+  height: 450px;
+  left: 15px;
+  top: 2px;
+}
+.quote-shalimov img {
+  width: 278px;
+}
+.quote-shalimov .image-capture {
+  position: absolute;
+  bottom: 80px;
+  right: -162px;
+}
+.spartak8-game-wrapper {
+  position: relative;
+  margin-bottom: 88px;
+}
+.spartak8-game-title {
+  position: absolute;
+  right: -20px;
+  top: -15px;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}

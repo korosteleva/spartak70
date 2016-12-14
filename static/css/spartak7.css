@@ -2,3 +2,27 @@
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
 }
+.quote-starschinov {
+  float: right;
+  position: relative;
+  width: 140px;
+  height: 450px;
+  left: 18px;
+  top: 22px;
+}
+.quote-starschinov img {
+  width: 380px;
+}
+.quote-starschinov .image-capture {
+  position: absolute;
+  bottom: 23px;
+  right: -175px;
+}
+.karpov-wrapper {
+  position: relative;
+  padding-bottom: 40%;
+}
+.karpov-image {
+  position: absolute;
+  top: -25px;
+}

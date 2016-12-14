@@ -1,10 +1,1 @@
-var diagonal = document.querySelector('.diagonal');
-
-function parallax(){
-    var scrollTop = Number(window.pageYOffset) * .3;
-    diagonal.style.top = 'calc(33% + ' + scrollTop + 'px)';
-}
-
-window.addEventListener('scroll', function(){
-    parallax();
-}, false);
+function parallax(){var a=.3*+window.pageYOffset;diagonal.style.top="calc(33% + "+a+"px)"}var diagonal=document.querySelector(".diagonal");window.addEventListener("scroll",function(){parallax()},!1);

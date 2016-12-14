@@ -1,16 +1,1 @@
-var highlights = document.querySelectorAll('.highlight');
-var animateClass = 'animate';
-var noAnimateClass = 'no-animate';
-window.addEventListener('scroll', function () {
-    [].forEach.call(highlights, (function(element) {
-        if (isScrolledIntoView(element) && !element.classList.contains(animateClass) && !element.classList.contains(noAnimateClass)) {
-            element.classList.add(animateClass);
-        }
-    }).bind(this));
-});
-
-function isScrolledIntoView(el) {
-    var elemTop = el.getBoundingClientRect().top;
-    var elemBottom = el.getBoundingClientRect().bottom;
-    return (elemTop >= 0) && (elemBottom <= window.innerHeight);
-}
+function isScrolledIntoView(n){var i=n.getBoundingClientRect().top,t=n.getBoundingClientRect().bottom;return i>=0&&t<=window.innerHeight}var highlights=document.querySelectorAll(".highlight"),animateClass="animate",noAnimateClass="no-animate";window.addEventListener("scroll",function(){[].forEach.call(highlights,function(n){!isScrolledIntoView(n)||n.classList.contains(animateClass)||n.classList.contains(noAnimateClass)||n.classList.add(animateClass)}.bind(this))});

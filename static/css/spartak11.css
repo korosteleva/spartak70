@@ -1,0 +1,27 @@
+.quote-kovalchuk {
+  float: right;
+  position: relative;
+  width: 140px;
+  height: 450px;
+  left: -216px;
+  top: 3px;
+}
+.quote-kovalchuk img {
+  width: 543px;
+}
+.quote-kovalchuk .image-capture {
+  position: absolute;
+  bottom: 8px;
+  right: -367px;
+}
+.spartak11-coach-wrapper {
+  position: relative;
+  margin-bottom: 90px;
+}
+.spartak11-coach-title {
+  position: absolute;
+  right: 0;
+  top: 0;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+}

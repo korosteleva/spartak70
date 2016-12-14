@@ -171,6 +171,9 @@ p.first-block {
 .spartak-bg-red {
   background: #a00a24;
 }
+.spartak-bg-black {
+  background: #000;
+}
 .main {
   padding-top: 64px;
 }

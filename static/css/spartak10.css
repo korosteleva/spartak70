@@ -2,3 +2,36 @@
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
+.quote-boldin {
+  float: right;
+  position: relative;
+  width: 140px;
+  height: 250px;
+  left: 28px;
+  top: 14px;
+}
+.quote-boldin img {
+  width: 344px;
+}
+.quote-boldin .image-capture {
+  position: absolute;
+  bottom: -60px;
+  right: -150px;
+}
+.spartak10-triangle {
+  position: relative;
+}
+.spartak10-triangle:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  right: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 380px 100vw;
+  border-color: transparent transparent #000 transparent;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}

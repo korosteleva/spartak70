@@ -1,8 +1,8 @@
-var diagonal = document.querySelector('.diagonal');
+var diagonal = document.querySelector('.diagonal-wrapper');
 
 function parallax(){
     var scrollTop = Number(window.pageYOffset) * .3;
-    diagonal.style.top = 'calc(33% + ' + scrollTop + 'px)';
+    diagonal.style.transform = 'translateY(' + scrollTop + 'px)';
 }
 
 window.addEventListener('scroll', function(){

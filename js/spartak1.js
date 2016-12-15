@@ -14,25 +14,38 @@ var galleryImages = [
 	'./static/images/1/gallery/12.png',
 	'./static/images/1/gallery/13.png',
 	'./static/images/1/gallery/14.png',
+	'./static/images/1/gallery/15.png',
+	'./static/images/1/gallery/16.png',
 ];
-var lastScrollTop = 0;
 var activeImageIndex = 0;
-var deltaChangeImage = 20; // change image in every 16 pixels
-window.addEventListener('scroll', function () {
-	var st = window.pageYOffset || document.documentElement.scrollTop;
-	if (st % deltaChangeImage === 0) {
-		if (st > lastScrollTop) {
-			// scroll down
-			if (activeImageIndex < galleryImages.length - 1) {
-				activeImageIndex += 1;
-			}
-		} else {
-			// scroll up
-			if (activeImageIndex > 0) {
-				activeImageIndex -= 1;
-			}
+
+window.addEventListener('scroll', throttle(function() {
+		activeImageIndex++;
+		if (!galleryImages[activeImageIndex]) {
+			activeImageIndex = 0;
 		}
 		gallery.style.backgroundImage = 'url(\'' + galleryImages[activeImageIndex] + '\')';
-	}
-	lastScrollTop = st;
-});
+}, 1000));
+
+function throttle(fn, wait) {
+	var timeout, args, immediate, context;
+
+	return function() {
+		args = arguments;
+		immediate = true;
+		context = this;
+
+		if (!timeout) {
+			(function callback() {
+				if (immediate) {
+					fn.apply(context, args);
+
+					immediate = false;
+					timeout = setTimeout(callback, wait);
+				} else {
+					timeout = null;
+				}
+			})();
+		}
+	};
+}

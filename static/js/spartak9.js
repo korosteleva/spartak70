@@ -1,1 +1,1 @@
-function parallax(){var a=.3*+window.pageYOffset;diagonal.style.top="calc(33% + "+a+"px)"}var diagonal=document.querySelector(".diagonal");window.addEventListener("scroll",function(){parallax()},!1);
+function parallax(){var t=.3*+window.pageYOffset;diagonal.style.transform="translateY("+t+"px)"}var diagonal=document.querySelector(".diagonal-wrapper");window.addEventListener("scroll",function(){parallax()},!1);

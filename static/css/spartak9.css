@@ -50,12 +50,14 @@
   width: 100%;
   height: 330px;
   background: #cf0a2c;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 33%;
   -webkit-transform: skewX(-48deg) skewY(-44deg);
           transform: skewX(-48deg) skewY(-44deg);
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
+}
+.spartak9-top-wrapper .diagonal-wrapper {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 33%;
 }

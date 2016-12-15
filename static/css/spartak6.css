@@ -1,3 +1,27 @@
+@-webkit-keyframes fade {
+  from {
+    -webkit-transform: translateY(0.25em);
+            transform: translateY(0.25em);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    -webkit-transform: translateY(0.25em);
+            transform: translateY(0.25em);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
 .spartak6-top-wrapper {
   position: relative;
 }
@@ -17,6 +41,21 @@
 @media (max-width: 960px) {
   .spartak6-top-wrapper .text-wrapper {
     margin-top: -50px;
+  }
+}
+@media (max-width: 480px) {
+  .spartak6-image-wrapper {
+    min-height: 100px;
+  }
+}
+@media (min-width: 480px) and (max-width: 960px) {
+  .spartak6-image-wrapper {
+    min-height: 300px;
+  }
+}
+@media (min-width: 960px) {
+  .spartak6-image-wrapper {
+    min-height: 600px;
   }
 }
 .quote-yakushev {

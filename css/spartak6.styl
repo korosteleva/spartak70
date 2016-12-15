@@ -1,20 +1,30 @@
 @import "variables"
 
-.spartak6-top-wrapper
-    position relative
+.spartak6
+    &-top-wrapper
+        position relative
 
-    .period-wrapper
-        position absolute
-        top 0
-        left 50%
-        width 100%
-        transform translateX(-50%)
+        .period-wrapper
+            position absolute
+            top 0
+            left 50%
+            width 100%
+            transform translateX(-50%)
 
-    .text-wrapper
+        .text-wrapper
+            @media (min-width screenMd)
+                margin-top -150px
+            @media (max-width screenMd)
+                margin-top -50px
+
+    &-image-wrapper
+        @media (max-width screenXsm)
+            min-height 100px
+        @media (min-width screenXsm) and (max-width screenMd)
+            min-height 300px
         @media (min-width screenMd)
-            margin-top -150px
-        @media (max-width screenMd)
-            margin-top -50px
+            min-height 600px
+
 
 .quote-yakushev
     float right

@@ -42,6 +42,20 @@
   .quote-shalimov {
     float: none;
     display: block;
+    width: 100%;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+  .quote-shalimov img {
+    max-width: 100%;
+  }
+  .quote-shalimov .image-capture {
+    left: 50%;
+    bottom: 0;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 100%;
   }
 }
 .spartak8-game-wrapper {

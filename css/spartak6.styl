@@ -10,6 +10,7 @@
             left 50%
             width 100%
             transform translateX(-50%)
+            box-sizing border-box
 
         .text-wrapper
             @media (min-width screenMd)
@@ -48,6 +49,12 @@
         float none
         height auto
         display block
+        width 100%
+        left 0
+        right 0
+
+        img
+            max-width 100%
 
         .image-capture
             right -360px
@@ -71,6 +78,12 @@
     @media (max-width screenSm)
         float none
         display block
+        width 100%
+        left 0
+        right 0
+
+        img
+            max-width 100%
 
     @media (max-width screenXsm)
         .image-capture

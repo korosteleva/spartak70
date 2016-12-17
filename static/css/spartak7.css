@@ -48,6 +48,12 @@
     display: block;
     height: auto;
     margin-bottom: 34px;
+    width: 100%;
+    left: 0;
+    right: 0;
+  }
+  .quote-starschinov img {
+    max-width: 100%;
   }
 }
 @media (max-width: 480px) {

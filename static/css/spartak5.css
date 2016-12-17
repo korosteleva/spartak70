@@ -52,6 +52,15 @@
     display: none;
   }
 }
+.quote-mayorov-wrapper {
+  text-align: center;
+  position: relative;
+}
+@media (max-width: 720px) {
+  .quote-mayorov-wrapper {
+    text-align: left;
+  }
+}
 .quote-mayorov img {
   width: 280px;
 }

@@ -1,1 +1,1 @@
-function parallax(){var t=.3*+window.pageYOffset;diagonal.style.transform="translateY("+t+"px)"}var diagonal=document.querySelector(".diagonal-wrapper");window.addEventListener("scroll",function(){parallax()},!1);
+function parallax(){var a=.3*+window.pageYOffset;diagonal.style.transform="translateY("+a+"px)"}if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){var diagonal=document.querySelector(".diagonal-wrapper");window.addEventListener("scroll",function(){parallax()},!1)}

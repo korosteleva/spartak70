@@ -21,6 +21,8 @@
     top -9px
     width 138px
     height 560px
+    @media (max-width screenSm)
+        display none
 
     img
         width 280px
@@ -45,6 +47,21 @@
         right -160px
         bottom -61px
 
+    @media (max-width screenXsm)
+        float none
+        height auto
+        display block
+        .image-capture
+            bottom -25px
+
+    @media (min-width screenXsm) and (max-width screenSm)
+        float none
+        height auto
+        display block
+        .image-capture
+            bottom 0
+            right -250px
+
 .spartak5-zinger-wrapper
     position absolute
     bottom 0
@@ -64,6 +81,9 @@
         position absolute
         right 115px
         bottom 58%
+
+        @media (max-width screenSm)
+            right 50px
 
 .footer-image
     padding-top 34px

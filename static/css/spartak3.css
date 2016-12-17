@@ -1,3 +1,27 @@
+@-webkit-keyframes fade {
+  from {
+    -webkit-transform: translateY(0.25em);
+            transform: translateY(0.25em);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    -webkit-transform: translateY(0.25em);
+            transform: translateY(0.25em);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
 .players-wrapper {
   position: relative;
 }
@@ -36,4 +60,14 @@
 }
 .footer-image-title {
   right: -47px;
+}
+@media (max-width: 720px) {
+  .quote-player {
+    float: none;
+    display: block;
+    height: auto;
+  }
+  .quote-player img {
+    position: static;
+  }
 }

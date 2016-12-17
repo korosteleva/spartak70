@@ -165,6 +165,13 @@ p.first-block {
 .highlight.orange {
   color: #fab078;
 }
+@media (max-width: 480px) {
+  .highlight {
+    margin-bottom: 34px;
+    font-size: 36px;
+    line-height: 1.2;
+  }
+}
 .spartak-bg-orange {
   background: #f2e5d3;
 }

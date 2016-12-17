@@ -1,3 +1,27 @@
+@-webkit-keyframes fade {
+  from {
+    -webkit-transform: translateY(0.25em);
+            transform: translateY(0.25em);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    -webkit-transform: translateY(0.25em);
+            transform: translateY(0.25em);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
 .quote-shalimov {
   float: right;
   position: relative;
@@ -14,6 +38,12 @@
   bottom: 80px;
   right: -162px;
 }
+@media (max-width: 720px) {
+  .quote-shalimov {
+    float: none;
+    display: block;
+  }
+}
 .spartak8-game-wrapper {
   position: relative;
   margin-bottom: 88px;
@@ -24,4 +54,9 @@
   top: -15px;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
+}
+@media (max-width: 720px) {
+  .spartak8-game-title {
+    display: none;
+  }
 }

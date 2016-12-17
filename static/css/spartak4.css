@@ -1,3 +1,27 @@
+@-webkit-keyframes fade {
+  from {
+    -webkit-transform: translateY(0.25em);
+            transform: translateY(0.25em);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    -webkit-transform: translateY(0.25em);
+            transform: translateY(0.25em);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
 .footer-image-title {
   right: -13px;
   top: 33px;
@@ -14,6 +38,11 @@
   height: 920px;
   background: transparent url("../../css/images/spartak.svg") no-repeat 50% 0;
 }
+@media (max-width: 480px) {
+  .spartak-theme .spartak {
+    display: none;
+  }
+}
 .quote-bobrov {
   float: right;
   position: relative;
@@ -21,6 +50,11 @@
   bottom: 12px;
   width: 135px;
   height: 430px;
+}
+@media (max-width: 480px) {
+  .quote-bobrov {
+    display: none;
+  }
 }
 .quote-bobrov img {
   width: 280px;
@@ -37,6 +71,11 @@
   bottom: -4px;
   width: 130px;
   height: 255px;
+}
+@media (max-width: 480px) {
+  .quote-cup {
+    display: none;
+  }
 }
 .quote-cup .image-capture {
   position: absolute;

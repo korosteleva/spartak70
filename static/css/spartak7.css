@@ -1,3 +1,27 @@
+@-webkit-keyframes fade {
+  from {
+    -webkit-transform: translateY(0.25em);
+            transform: translateY(0.25em);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    -webkit-transform: translateY(0.25em);
+            transform: translateY(0.25em);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
 .footer-image-title {
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
@@ -17,6 +41,24 @@
   position: absolute;
   bottom: 23px;
   right: -175px;
+}
+@media (max-width: 720px) {
+  .quote-starschinov {
+    float: none;
+    display: block;
+    height: auto;
+    margin-bottom: 34px;
+  }
+}
+@media (max-width: 480px) {
+  .quote-starschinov .image-capture {
+    display: none;
+  }
+}
+@media (min-width: 480px) and (max-width: 720px) {
+  .quote-starschinov .image-capture {
+    right: -380px;
+  }
 }
 .karpov-wrapper {
   position: relative;

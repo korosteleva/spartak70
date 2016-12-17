@@ -1,3 +1,4 @@
+@import "variables"
 .footer-image-title
     transform translate(-50%, 0)
 
@@ -17,6 +18,19 @@
         bottom 23px
         right -175px
 
+    @media (max-width screenSm)
+        float none
+        display block
+        height auto
+        margin-bottom 34px
+
+    @media (max-width screenXsm)
+        .image-capture
+            display none
+
+    @media (min-width screenXsm) and (max-width screenSm)
+        .image-capture
+            right -380px
 
 .karpov
     &-wrapper

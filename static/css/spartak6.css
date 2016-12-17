@@ -73,6 +73,22 @@
   right: -235px;
   bottom: -40px;
 }
+@media (max-width: 480px) {
+  .quote-yakushev .image-capture {
+    display: none;
+  }
+}
+@media (max-width: 720px) {
+  .quote-yakushev {
+    float: none;
+    height: auto;
+    display: block;
+  }
+  .quote-yakushev .image-capture {
+    right: -360px;
+    top: 15px;
+  }
+}
 .quote-zimin {
   float: right;
   position: relative;
@@ -87,4 +103,21 @@
   position: absolute;
   right: -161px;
   bottom: -158px;
+}
+@media (max-width: 720px) {
+  .quote-zimin {
+    float: none;
+    display: block;
+  }
+}
+@media (max-width: 480px) {
+  .quote-zimin .image-capture {
+    display: none;
+  }
+}
+@media (min-width: 480px) and (max-width: 720px) {
+  .quote-zimin .image-capture {
+    top: 0;
+    right: -300px;
+  }
 }

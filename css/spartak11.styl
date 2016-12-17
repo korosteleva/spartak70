@@ -1,3 +1,5 @@
+@import "variables"
+
 .quote-kovalchuk
     float right
     position relative
@@ -14,6 +16,19 @@
         bottom 8px
         right -367px
 
+
+    @media (max-width screenSm)
+        float none
+        left 0
+        top 0
+        height auto
+        width 100%
+        img
+            max-width 100%
+
+        .image-capture
+            display none
+
 .spartak11-coach
     &-wrapper
         position relative
@@ -24,3 +39,10 @@
         right 0
         top 0
         transform translateX(-50%) translateY(-50%)
+
+@media (max-width screenMd)
+    .spartak11-coach-title
+        top 0
+        bottom -7px
+        transform translateX(-50%) translateY(100%)
+        left 50%

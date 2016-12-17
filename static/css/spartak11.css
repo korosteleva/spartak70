@@ -1,3 +1,27 @@
+@-webkit-keyframes fade {
+  from {
+    -webkit-transform: translateY(0.25em);
+            transform: translateY(0.25em);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    -webkit-transform: translateY(0.25em);
+            transform: translateY(0.25em);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
 .quote-kovalchuk {
   float: right;
   position: relative;
@@ -14,6 +38,21 @@
   bottom: 8px;
   right: -367px;
 }
+@media (max-width: 720px) {
+  .quote-kovalchuk {
+    float: none;
+    left: 0;
+    top: 0;
+    height: auto;
+    width: 100%;
+  }
+  .quote-kovalchuk img {
+    max-width: 100%;
+  }
+  .quote-kovalchuk .image-capture {
+    display: none;
+  }
+}
 .spartak11-coach-wrapper {
   position: relative;
   margin-bottom: 90px;
@@ -24,4 +63,13 @@
   top: 0;
   -webkit-transform: translateX(-50%) translateY(-50%);
           transform: translateX(-50%) translateY(-50%);
+}
+@media (max-width: 960px) {
+  .spartak11-coach-title {
+    top: 0;
+    bottom: -7px;
+    -webkit-transform: translateX(-50%) translateY(100%);
+            transform: translateX(-50%) translateY(100%);
+    left: 50%;
+  }
 }

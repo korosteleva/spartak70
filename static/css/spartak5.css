@@ -1,3 +1,27 @@
+@-webkit-keyframes fade {
+  from {
+    -webkit-transform: translateY(0.25em);
+            transform: translateY(0.25em);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    -webkit-transform: translateY(0.25em);
+            transform: translateY(0.25em);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
 .spartak-bg-red {
   background-image: url("../../css/images/spartak5-bg.png");
   background-repeat: no-repeat;
@@ -23,6 +47,11 @@
   width: 138px;
   height: 560px;
 }
+@media (max-width: 720px) {
+  .quote-mayorov {
+    display: none;
+  }
+}
 .quote-mayorov img {
   width: 280px;
 }
@@ -46,6 +75,27 @@
   right: -160px;
   bottom: -61px;
 }
+@media (max-width: 480px) {
+  .quote-blinov {
+    float: none;
+    height: auto;
+    display: block;
+  }
+  .quote-blinov .image-capture {
+    bottom: -25px;
+  }
+}
+@media (min-width: 480px) and (max-width: 720px) {
+  .quote-blinov {
+    float: none;
+    height: auto;
+    display: block;
+  }
+  .quote-blinov .image-capture {
+    bottom: 0;
+    right: -250px;
+  }
+}
 .spartak5-zinger-wrapper {
   position: absolute;
   bottom: 0;
@@ -66,6 +116,11 @@
   position: absolute;
   right: 115px;
   bottom: 58%;
+}
+@media (max-width: 720px) {
+  .spartak5-zinger-wrapper .image-capture {
+    right: 50px;
+  }
 }
 .footer-image {
   padding-top: 34px;

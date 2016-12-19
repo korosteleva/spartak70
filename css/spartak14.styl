@@ -1,0 +1,49 @@
+@import "variables"
+
+.footer-image
+    margin-top -60px
+    pointer-events none
+    @media (max-width screenXsm)
+        margin-top 0
+
+.yakushev-wrapper
+    position relative
+
+    .image-capture
+        position absolute
+        right 0
+        top 0
+        transform translateX(-50%) translateY(-100%)
+
+        @media (max-width screenMd)
+            display none
+
+
+.kanareykin
+    &-wrapper
+        position relative
+        background-repeat no-repeat
+        background-position 0 50%
+        background-size contain
+
+        @media (max-width screenSm)
+            background transparent !important
+
+            .kanareykin-text
+                text-align left
+                padding-left 0
+
+        .image-capture
+            position absolute
+            top 50%
+            right 50px
+            transform translateX(0) translateY(-150%)
+
+            @media (max-width screenMd)
+                display none
+
+    &-text
+        text-align center
+        padding-left 140px
+
+

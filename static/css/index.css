@@ -195,6 +195,20 @@ header {
   overflow-x: auto;
   z-index: 5;
 }
+header:before {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: transparent url("../../static/images/70.svg") no-repeat 50% 50%;
+  top: 8px;
+  left: 55px;
+}
+@media (max-width: 860px) {
+  header:before {
+    display: none;
+  }
+}
 header .timeline {
   max-width: 604px;
   margin: 0 auto;
@@ -209,6 +223,7 @@ header .timeline {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 header .timeline-element {
   position: relative;
@@ -223,7 +238,7 @@ header .timeline-element.active .timeline-hint {
           transform: translate(-50%, -50%);
 }
 header .timeline-element.active .timeline-number {
-  background: transparent url("../../css/images/timeline-active.svg") no-repeat 50% 50%;
+  background: transparent url("../../static/images/timeline-active.svg") no-repeat 50% 50%;
 }
 header .timeline-hint {
   display: none;
@@ -285,7 +300,7 @@ header .timeline-number:hover {
 .footer-nav-link:after {
   content: '';
   position: absolute;
-  background: transparent url("../../css/images/arrow-right.svg") no-repeat 50% 50%;
+  background: transparent url("../../static/images/arrow-right.svg") no-repeat 50% 50%;
   width: 5px;
   height: 17px;
   bottom: 0;
@@ -295,7 +310,7 @@ header .timeline-number:hover {
   color: #d2956b;
 }
 .footer-nav-link:hover:after {
-  background-image: url("../../css/images/arrow-right-hover.svg");
+  background-image: url("../../static/images/arrow-right-hover.svg");
 }
 .sharing {
   text-align: center;
@@ -328,22 +343,22 @@ header .timeline-number:hover {
   width: 28px !important;
 }
 .sharing-white .ya-share2__item_service_facebook .ya-share2__icon {
-  background: transparent url("../../css/images/sharing/fb-white.svg") no-repeat 50% 50% !important;
+  background: transparent url("../../static/images/sharing/fb-white.svg") no-repeat 50% 50% !important;
 }
 .sharing-white .ya-share2__item_service_twitter .ya-share2__icon {
-  background: transparent url("../../css/images/sharing/tw-white.svg") no-repeat 50% 50% !important;
+  background: transparent url("../../static/images/sharing/tw-white.svg") no-repeat 50% 50% !important;
 }
 .sharing-white .ya-share2__item_service_vkontakte .ya-share2__icon {
-  background: transparent url("../../css/images/sharing/vk-white.svg") no-repeat 50% 50% !important;
+  background: transparent url("../../static/images/sharing/vk-white.svg") no-repeat 50% 50% !important;
 }
 .sharing-black .ya-share2__item_service_facebook .ya-share2__icon {
-  background: transparent url("../../css/images/sharing/fb-black.svg") no-repeat 50% 50% !important;
+  background: transparent url("../../static/images/sharing/fb-black.svg") no-repeat 50% 50% !important;
 }
 .sharing-black .ya-share2__item_service_twitter .ya-share2__icon {
-  background: transparent url("../../css/images/sharing/tw-black.svg") no-repeat 50% 50% !important;
+  background: transparent url("../../static/images/sharing/tw-black.svg") no-repeat 50% 50% !important;
 }
 .sharing-black .ya-share2__item_service_vkontakte .ya-share2__icon {
-  background: transparent url("../../css/images/sharing/vk-black.svg") no-repeat 50% 50% !important;
+  background: transparent url("../../static/images/sharing/vk-black.svg") no-repeat 50% 50% !important;
 }
 .period {
   text-align: center;
@@ -364,7 +379,7 @@ header .timeline-number:hover {
   }
 }
 .period-number {
-  background: transparent url("../../css/images/period-number.svg") no-repeat 50% 50%;
+  background: transparent url("../../static/images/period-number.svg") no-repeat 50% 50%;
   background-size: contain;
   font-family: 'garamondc', serif;
   color: #f2e5d3;
@@ -373,7 +388,7 @@ header .timeline-number:hover {
   height: 34px;
 }
 .period-number-orange {
-  background-image: url("../../css/images/period-number-orange.svg");
+  background-image: url("../../static/images/period-number-orange.svg");
 }
 @media (max-width: 480px) {
   .period-number {

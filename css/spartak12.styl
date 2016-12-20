@@ -1,0 +1,47 @@
+@import "variables"
+
+.quote-bragin
+    float right
+    position relative
+    width 140px
+    height 400px
+    left 20px
+    top -15px
+
+    img
+        width 360px
+
+    .image-capture
+        position absolute
+        bottom -46px
+        right -154px
+
+
+@media (max-width screenMd)
+    .quote-bragin
+        float none
+        left 0
+        top 0
+        height 450px
+        width 100%
+        display block
+        text-align center
+
+        img
+            max-width 100%
+
+        .image-capture
+            bottom 25px
+            left 50%
+            transform translateX(-50%)
+
+footer
+    .container
+        z-index 1
+
+    .footer-image
+        margin-top -30px
+        pointer-events none
+
+        @media (max-width screenXsm)
+            margin-top 0

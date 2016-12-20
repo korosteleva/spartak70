@@ -1,0 +1,186 @@
+@-webkit-keyframes fade {
+  from {
+    -webkit-transform: translateY(0.25em);
+            transform: translateY(0.25em);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    -webkit-transform: translateY(0.25em);
+            transform: translateY(0.25em);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+header {
+  box-shadow: 0 0 3px 0 rgba(0,0,0,0.5);
+}
+.spartak-index-wrapper {
+  background-color: #cf0a2c;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: contain;
+  position: relative;
+}
+.spartak-index-logo {
+  text-align: center;
+  padding-top: 50px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 20px;
+}
+.footer-nav-link {
+  color: #fab078;
+}
+.footer-nav-link:after {
+  background-image: url("../../static/images/arrow-right-hover.svg");
+}
+.footer-nav-link:hover {
+  color: #f2e5d3;
+}
+.footer-nav-link:hover:after {
+  background-image: url("../../static/images/arrow-right-orange.svg");
+}
+.table-of-contents-wrapper h2,
+.release-workers-wrapper h2 {
+  color: #000;
+  font-family: Times, serif;
+  font-size: 12px;
+  line-height: 17px;
+  text-transform: uppercase;
+  letter-spacing: 4.5;
+  text-align: center;
+}
+.table-of-contents-wrapper {
+  padding-top: 54px;
+}
+.table-of-contents-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.table-of-contents-list .table-of-contents-element {
+  text-align: center;
+  position: relative;
+  margin: 46px 0;
+}
+.table-of-contents-list .table-of-contents-element:first-of-type {
+  margin-top: 30px;
+}
+.table-of-contents-list .table-of-contents-element:before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  font-family: Times, serif;
+  font-size: 72px;
+  line-height: 48px;
+  color: #970922;
+}
+.table-of-contents-list .table-of-contents-element-1:before {
+  content: 'I';
+}
+.table-of-contents-list .table-of-contents-element-2:before {
+  content: 'II';
+}
+.table-of-contents-list .table-of-contents-element-3:before {
+  content: 'III';
+}
+.table-of-contents-list .table-of-contents-element-4:before {
+  content: 'IV';
+}
+.table-of-contents-list .table-of-contents-element-5:before {
+  content: 'V';
+}
+.table-of-contents-list .table-of-contents-element-6:before {
+  content: 'VI';
+}
+.table-of-contents-list .table-of-contents-element-7:before {
+  content: 'VII';
+}
+.table-of-contents-list .table-of-contents-element-8:before {
+  content: 'VIII';
+}
+.table-of-contents-list .table-of-contents-element-9:before {
+  content: 'IX';
+}
+.table-of-contents-list .table-of-contents-element-10:before {
+  content: 'X';
+}
+.table-of-contents-list .table-of-contents-element-11:before {
+  content: 'XI';
+}
+.table-of-contents-list .table-of-contents-element-12:before {
+  content: 'XII';
+}
+.table-of-contents-list .table-of-contents-element-13:before {
+  content: 'XIII';
+}
+.table-of-contents-list .table-of-contents-element-14:before {
+  content: 'XIV';
+}
+.table-of-contents-list a {
+  font-family: Times, serif;
+  color: #f2e5d3;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 24px;
+  position: relative;
+}
+.table-of-contents-list a:hover {
+  color: #fff;
+}
+.release-workers-wrapper {
+  padding-top: 50px;
+}
+.release-workers-list {
+  margin: 0;
+  margin-top: 30px;
+  padding: 0;
+  list-style: none;
+}
+.release-workers-element {
+  font-family: Times, serif;
+  color: #f2e5d3;
+  width: 50%;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: -4px;
+  margin-bottom: 25px;
+}
+@media (max-width: 480px) {
+  .release-workers-element {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+.release-workers-name {
+  font-size: 18px;
+  line-height: 23px;
+  display: block;
+}
+.release-workers-responsibility {
+  opacity: 0.7;
+  font-size: 16px;
+  line-height: 19px;
+}
+.release-workers-gratitude {
+  padding-top: 20px;
+  padding-bottom: 40px;
+  font-family: Times, serif;
+  color: #f2e5d3;
+  font-size: 17px;
+  line-height: 23px;
+}

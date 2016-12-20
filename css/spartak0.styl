@@ -1,0 +1,163 @@
+@import "variables"
+
+header
+    box-shadow 0 0 3px 0 rgba(0,0,0,.5)
+
+.spartak-index
+    &-wrapper
+        background-color spartakRed
+        background-repeat no-repeat
+        background-position 50% 0
+        background-size contain
+        position relative
+
+    &-logo
+        text-align center
+        padding-top 50px
+        margin-top 0
+        margin-bottom 0
+        padding-bottom 20px
+
+.footer-nav-link
+    color spartakOrangeLight
+    &:after
+        background-image url('../../static/images/arrow-right-hover.svg')
+
+    &:hover
+        color spartakOrangeLighter
+        &:after
+            background-image url('../../static/images/arrow-right-orange.svg')
+
+.table-of-contents-wrapper h2
+.release-workers-wrapper h2
+    color #000000
+    font-family Times, serif
+    font-size 12px
+    line-height 17px
+    text-transform uppercase
+    letter-spacing 4.5
+    text-align center
+
+.table-of-contents
+    &-wrapper
+        padding-top 54px
+
+    &-list
+        margin 0
+        padding 0
+        list-style none
+
+        .table-of-contents-element
+            text-align center
+            position relative
+            margin 46px 0
+
+            &:first-of-type
+                margin-top 30px
+
+            &:before
+                content ''
+                position absolute
+                top 2px
+                left 50%
+                transform translateX(-50%)
+                font-family Times, serif
+                font-size 72px
+                line-height 48px
+                color spartakDarkerRed
+
+            &-1
+                &:before
+                    content 'I'
+            &-2
+                &:before
+                    content 'II'
+            &-3
+                &:before
+                    content 'III'
+            &-4
+                &:before
+                    content 'IV'
+            &-5
+                &:before
+                    content 'V'
+            &-6
+                &:before
+                    content 'VI'
+            &-7
+                &:before
+                    content 'VII'
+            &-8
+                &:before
+                    content 'VIII'
+            &-9
+                &:before
+                    content 'IX'
+            &-10
+                &:before
+                    content 'X'
+            &-11
+                &:before
+                    content 'XI'
+            &-12
+                &:before
+                    content 'XII'
+            &-13
+                &:before
+                    content 'XIII'
+            &-14
+                &:before
+                    content 'XIV'
+
+        a
+            font-family Times, serif
+            color spartakOrangeLighter
+            text-decoration none
+            font-size 20px
+            line-height 24px
+            position relative
+
+            &:hover
+                color #ffffff
+
+.release-workers
+    &-wrapper
+        padding-top 50px
+
+    &-list
+        margin 0
+        margin-top 30px
+        padding 0
+        list-style none
+
+    &-element
+        font-family Times, serif
+        color spartakOrangeLighter
+        width 50%
+        display inline-block
+        vertical-align top
+        margin-right -4px
+        margin-bottom 25px
+
+        @media (max-width screenXsm)
+            width 100%
+            margin-right 0
+
+    &-name
+        font-size 18px
+        line-height 23px
+        display block
+
+    &-responsibility
+        opacity .7
+        font-size 16px
+        line-height 19px
+
+    &-gratitude
+        padding-top 20px
+        padding-bottom 40px
+        font-family Times, serif
+        color spartakOrangeLighter
+        font-size 17px
+        line-height 23px
+

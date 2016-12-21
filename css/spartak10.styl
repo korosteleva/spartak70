@@ -26,6 +26,10 @@
 .spartak10-triangle
     &-wrapper
         position relative
+        transform translateY(-100px)
+        @media (max-width screenXsm)
+            transform translateY(-400px)
+
         &:after
             content ''
             position absolute

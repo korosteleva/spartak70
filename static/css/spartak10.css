@@ -63,6 +63,14 @@
 }
 .spartak10-triangle-wrapper {
   position: relative;
+  -webkit-transform: translateY(-100px);
+          transform: translateY(-100px);
+}
+@media (max-width: 480px) {
+  .spartak10-triangle-wrapper {
+    -webkit-transform: translateY(-400px);
+            transform: translateY(-400px);
+  }
 }
 .spartak10-triangle-wrapper:after {
   content: '';

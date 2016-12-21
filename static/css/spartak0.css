@@ -29,6 +29,12 @@ header {
   position: relative;
   overflow: hidden;
 }
+@media (max-width: 480px) {
+  .spartak-index-wrapper {
+    background: transparent url("../../static/images/index/top600.jpg") no-repeat 50% 0;
+    background-size: contain;
+  }
+}
 .spartak-index-logo {
   text-align: center;
   padding-top: 50px;
@@ -39,19 +45,25 @@ header {
 .spartak-index-top,
 .spartak-index-bottom,
 .spartak-index-puck {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: 50% -80px;
+  display: block;
+}
+@media (max-width: 480px) {
+  .spartak-index-top,
+  .spartak-index-bottom,
+  .spartak-index-puck {
+    display: none;
+  }
 }
 .spartak-index-puck {
-  background-size: inherit;
-  background-position: 50% 80vh;
+  bottom: 10vh;
+  top: auto;
+  left: 50%;
+  margin-left: -125px;
 }
 .footer-nav-link {
   color: #fab078;
@@ -154,7 +166,7 @@ header {
   position: relative;
 }
 .table-of-contents-list a:hover {
-  color: #fefefe;
+  color: #fab078;
 }
 .release-workers-wrapper {
   padding-top: 50px;
@@ -197,4 +209,10 @@ header {
   color: #f2e5d3;
   font-size: 17px;
   line-height: 23px;
+}
+.release-workers-gratitude-link {
+  color: #f2e5d3;
+}
+.release-workers-gratitude-link:hover {
+  color: #fab078;
 }

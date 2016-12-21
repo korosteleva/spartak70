@@ -7,6 +7,9 @@ header
     &-wrapper
         position relative
         overflow hidden
+        @media (max-width screenXsm)
+            background transparent url('../../static/images/index/top600.jpg') no-repeat 50% 0
+            background-size contain
 
     &-logo
         text-align center
@@ -19,19 +22,22 @@ header
     &-top
     &-bottom
     &-puck
-        position absolute
+        position fixed
         top 0
         left 0
         right 0
         bottom 0
-        background-size cover
-        background-repeat no-repeat
-        background-attachment fixed
-        background-position 50% -80px
+        display block
+
+        @media (max-width screenXsm)
+            display none
 
     &-puck
-        background-size inherit
-        background-position 50% 80vh
+        bottom 10vh
+        top auto
+        left 50%
+        margin-left -125px
+
 
 .footer-nav-link
     color spartakOrangeLight
@@ -133,7 +139,7 @@ header
             position relative
 
             &:hover
-                color #FEFEFE
+                color spartakOrangeLight
 
 .release-workers
     &-wrapper
@@ -175,4 +181,10 @@ header
         color spartakOrangeLighter
         font-size 17px
         line-height 23px
+
+        &-link
+            color spartakOrangeLighter
+
+            &:hover
+                color spartakOrangeLight
 

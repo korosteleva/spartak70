@@ -2,7 +2,7 @@ if( !/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navig
     var spartak = document.querySelector('.spartak10-triangle-wrapper');
 
     function parallax() {
-        var scrollTop = Number(window.pageYOffset) * -.2;
+        var scrollTop = Number(window.pageYOffset) * -.2 - 100;
         spartak.style.transform = 'translateY(' + scrollTop + 'px)';
     }
 

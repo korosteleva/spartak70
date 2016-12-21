@@ -5,9 +5,9 @@ if( !/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navig
 
     function parallax() {
         var scrollTop = Number(window.pageYOffset);
-        spartak.style.transform = 'translateY(' + scrollTop * .02 + 'px)';
-        spartakTop.style.transform = 'translateY(' + scrollTop * .05 + 'px)';
-        spartakPuck.style.transform = 'translateY(' + scrollTop * -.05 + 'px)';
+        spartak.style.transform = 'translateY(' + scrollTop * -.03 + 'px)';
+        spartakTop.style.transform = 'translateY(' + scrollTop * -.07 + 'px)';
+        spartakPuck.style.transform = 'translateY(' + scrollTop * -.12 + 'px)';
     }
 
     window.addEventListener('scroll', function () {

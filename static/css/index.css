@@ -282,6 +282,9 @@ header .timeline-number:hover {
   line-height: 20px;
   text-align: center;
 }
+.footer-link {
+  display: block;
+}
 .footer-nav {
   text-align: center;
   margin-top: 60px;

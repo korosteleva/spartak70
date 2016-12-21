@@ -33,7 +33,7 @@ header
             display none
 
     &-puck
-        bottom 10vh
+        bottom 20px
         top auto
         left 50%
         margin-left -125px
@@ -41,7 +41,18 @@ header
 
 .footer-nav-link
     color spartakOrangeLight
+    border 1px solid spartakOrangeLight
+    border-radius 6px
+    padding 17px 0
+    width 500px
+    display block
+    margin 0 auto
+    max-width 100%
+
     &:after
+        top 50%
+        right 15px
+        transform translateY(-50%)
         background-image url('../../static/images/arrow-right-hover.svg')
 
     &:hover

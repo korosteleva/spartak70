@@ -60,15 +60,26 @@ header {
   }
 }
 .spartak-index-puck {
-  bottom: 10vh;
+  bottom: 20px;
   top: auto;
   left: 50%;
   margin-left: -125px;
 }
 .footer-nav-link {
   color: #fab078;
+  border: 1px solid #fab078;
+  border-radius: 6px;
+  padding: 17px 0;
+  width: 500px;
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
 }
 .footer-nav-link:after {
+  top: 50%;
+  right: 15px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   background-image: url("../../static/images/arrow-right-hover.svg");
 }
 .footer-nav-link:hover {

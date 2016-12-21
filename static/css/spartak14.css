@@ -24,7 +24,6 @@
 }
 .footer-image {
   margin-top: -60px;
-  pointer-events: none;
 }
 @media (max-width: 480px) {
   .footer-image {

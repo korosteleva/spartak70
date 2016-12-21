@@ -17,34 +17,38 @@
     line-height 20px
     text-align center
 
-.footer-nav
-    text-align center
-    margin-top 60px
-
+.footer
     &-link
-        position relative
-        font-family Times, serif
-        text-transform uppercase
-        text-decoration none
-        color spartakRed
-        font-size 14px
-        line-height 18px
-        letter-spacing 5.25
+        display block
 
-        &:after
-            content ''
-            position absolute
-            background transparent url('../../static/images/arrow-right.svg') no-repeat 50% 50%
-            width 5px
-            height 17px
-            bottom 0
-            right -7px
+    &-nav
+        text-align center
+        margin-top 60px
 
-        &:hover
-            color spartakOrange
+        &-link
+            position relative
+            font-family Times, serif
+            text-transform uppercase
+            text-decoration none
+            color spartakRed
+            font-size 14px
+            line-height 18px
+            letter-spacing 5.25
 
             &:after
-                background-image url('../../static/images/arrow-right-hover.svg')
+                content ''
+                position absolute
+                background transparent url('../../static/images/arrow-right.svg') no-repeat 50% 50%
+                width 5px
+                height 17px
+                bottom 0
+                right -7px
+
+            &:hover
+                color spartakOrange
+
+                &:after
+                    background-image url('../../static/images/arrow-right-hover.svg')
 
 .sharing
     text-align center

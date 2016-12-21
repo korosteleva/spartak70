@@ -17,7 +17,7 @@ if( !/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navig
 
 		galleryImages[activeImageIndex].classList.add('active');
 
-	}, 600));
+	}, 1400));
 
 	function throttle(fn, wait) {
 		var timeout, args, immediate, context;

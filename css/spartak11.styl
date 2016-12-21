@@ -1,33 +1,34 @@
 @import "variables"
 
-.quote-kovalchuk
-    float right
-    position relative
-    width 140px
-    height 450px
-    left -216px
-    top 3px
+@media (min-width screenMd)
+    .quote-kovalchuk
+        &-wrapper
+            background-repeat no-repeat
+            background-position 84% 4px
+            position relative
 
-    img
-        width 543px
+            p
+                padding-right 140px
 
-    .image-capture
-        position absolute
-        bottom 8px
-        right -367px
-
-
-    @media (max-width screenSm)
-        float none
-        left 0
-        top 0
-        height auto
-        width 100%
         img
-            max-width 100%
+            display none
 
         .image-capture
-            display none
+            position absolute
+            bottom 28%
+            right -23%
+
+@media (max-width screenMd)
+    .quote-kovalchuk
+        &-wrapper
+            background transparent !important
+
+        display block
+        text-align center
+        padding-bottom 20px
+
+        img
+            max-width 100%
 
 .spartak11-coach
     &-wrapper

@@ -1,0 +1,114 @@
+@import "variables"
+
+.quote-gasek
+    float right
+    position relative
+    width 140px
+    height 310px
+    left 19px
+    top -45px
+
+    img
+        width 340px
+
+    .image-capture
+        position absolute
+        bottom -118px
+        right -134px
+
+.quote-il
+    float right
+    position relative
+    width 140px
+    height 350px
+    left 29px
+    top 5px
+
+    @media (max-width 1040px)
+        display none
+
+    img
+        width 344px
+
+    .image-capture
+        position absolute
+        bottom -41px
+        right -150px
+
+
+.quote-branko
+    &-wrapper
+        text-align center
+
+        @media (max-width screenMd)
+            text-align left
+
+    float left
+    position relative
+    width 140px
+    height 450px
+    left -423px
+    top 83px
+
+    img
+        width 560px
+
+    .image-capture
+        position absolute
+        bottom 52px
+        right -262px
+
+
+
+@media (max-width screenMd)
+    .quote-gasek
+    .quote-branko
+        float none
+        left 0
+        top 0
+        height 450px
+        width 100%
+        display block
+        text-align center
+
+        img
+            max-width 100%
+
+        .image-capture
+            bottom 25px
+            left 50%
+            transform translateX(-50%)
+
+@media (max-width screenXsm)
+    .quote-branko
+        height 300px
+
+
+.spartak13-wrapper
+    background-color spartakDarkRed
+
+    .highlight
+        margin-bottom 0
+
+    .riga-wrapper
+        position relative
+
+        .full-width
+            position relative
+
+        &-bg
+            position absolute
+            bottom 0
+            left 0
+            right 0
+            height 100px
+            background #FEFEFE
+
+        .image-capture
+            position absolute
+            right 33px
+            top 28px
+            transform translateY(100%)
+
+            @media (max-width screenSm)
+                display none

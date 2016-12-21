@@ -70,3 +70,18 @@ footer .footer-image {
     margin-top: 0;
   }
 }
+.spartak2001-wrapper {
+  position: relative;
+}
+.spartak2001-wrapper .image-capture {
+  position: absolute;
+  right: 85px;
+  top: 10px;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+@media (max-width: 800px) {
+  .spartak2001-wrapper .image-capture {
+    display: none;
+  }
+}

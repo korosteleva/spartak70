@@ -34,31 +34,16 @@ header
             position relative
             text-align center
 
-            .timeline-hint
-                display block
-                position absolute
-                top -80px
-                left 50%
-                transform translate(-50%, -50%)
-                transition top .3s
-                background: -moz-linear-gradient(left,  rgba(207,10,44,0) 0%, rgba(207,10,44,1) 10%, rgba(207,10,44,1) 90%, rgba(207,10,44,0) 100%); /* FF3.6-15 */
-                background: -webkit-linear-gradient(left,  rgba(207,10,44,0) 0%,rgba(207,10,44,1) 10%,rgba(207,10,44,1) 90%,rgba(207,10,44,0) 100%); /* Chrome10-25,Safari5.1-6 */
-                background: linear-gradient(to right,  rgba(207,10,44,0) 0%,rgba(207,10,44,1) 10%,rgba(207,10,44,1) 90%,rgba(207,10,44,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-                padding 2px 15px
-
             &.active
-            &:hover
                 .timeline-hint
+                    display block
+                    position absolute
                     top -10px
+                    left 50%
+                    transform translate(-50%, -50%)
 
-            &.active
                 .timeline-number
                     background transparent url('../../static/images/timeline-active.svg') no-repeat 50% 50%
-
-            &:hover
-                .timeline-hint
-                    z-index 1
-
 
         &-hint
             display none
@@ -79,4 +64,4 @@ header
             text-decoration none
 
             &:hover
-                color #ffffff
+                color #FEFEFE

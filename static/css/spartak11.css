@@ -22,35 +22,35 @@
     opacity: 1;
   }
 }
-.quote-kovalchuk {
-  float: right;
-  position: relative;
-  width: 140px;
-  height: 450px;
-  left: -216px;
-  top: 3px;
+@media (min-width: 960px) {
+  .quote-kovalchuk-wrapper {
+    background-repeat: no-repeat;
+    background-position: 84% 4px;
+    position: relative;
+  }
+  .quote-kovalchuk-wrapper p {
+    padding-right: 140px;
+  }
+  .quote-kovalchuk img {
+    display: none;
+  }
+  .quote-kovalchuk .image-capture {
+    position: absolute;
+    bottom: 28%;
+    right: -23%;
+  }
 }
-.quote-kovalchuk img {
-  width: 543px;
-}
-.quote-kovalchuk .image-capture {
-  position: absolute;
-  bottom: 8px;
-  right: -367px;
-}
-@media (max-width: 720px) {
+@media (max-width: 960px) {
   .quote-kovalchuk {
-    float: none;
-    left: 0;
-    top: 0;
-    height: auto;
-    width: 100%;
+    display: block;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  .quote-kovalchuk-wrapper {
+    background: transparent !important;
   }
   .quote-kovalchuk img {
     max-width: 100%;
-  }
-  .quote-kovalchuk .image-capture {
-    display: none;
   }
 }
 .spartak11-coach-wrapper {

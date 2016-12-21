@@ -26,11 +26,8 @@ header {
   box-shadow: 0 0 3px 0 rgba(0,0,0,0.5);
 }
 .spartak-index-wrapper {
-  background-color: #cf0a2c;
-  background-repeat: no-repeat;
-  background-position: 50% 0;
-  background-size: contain;
   position: relative;
+  overflow: hidden;
 }
 .spartak-index-logo {
   text-align: center;
@@ -38,6 +35,23 @@ header {
   margin-top: 0;
   margin-bottom: 0;
   padding-bottom: 30px;
+}
+.spartak-index-top,
+.spartak-index-bottom,
+.spartak-index-puck {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 50% -80px;
+}
+.spartak-index-puck {
+  background-size: inherit;
+  background-position: 50% 80vh;
 }
 .footer-nav-link {
   color: #fab078;
@@ -140,7 +154,7 @@ header {
   position: relative;
 }
 .table-of-contents-list a:hover {
-  color: #fff;
+  color: #fefefe;
 }
 .release-workers-wrapper {
   padding-top: 50px;

@@ -117,7 +117,7 @@ body.page-black {
   background: #000;
 }
 body.page-white {
-  background: #fff;
+  background: #fefefe;
 }
 .container {
   max-width: 560px;
@@ -137,7 +137,7 @@ p.black {
   color: #000;
 }
 p.white {
-  color: #fff;
+  color: #fefefe;
 }
 p.first-block {
   margin-top: 24px;
@@ -182,7 +182,7 @@ p.first-block {
   background: #000;
 }
 .spartak-bg-white {
-  background: #fff;
+  background: #fefefe;
 }
 .main {
   padding-top: 64px;
@@ -228,28 +228,16 @@ header .timeline-element {
   position: relative;
   text-align: center;
 }
-header .timeline-element .timeline-hint {
+header .timeline-element.active .timeline-hint {
   display: block;
   position: absolute;
-  top: -80px;
+  top: -10px;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  -webkit-transition: top 0.3s;
-  transition: top 0.3s; /* FF3.6-15 */
-  background: -webkit-linear-gradient(left, rgba(207,10,44,0) 0%, #cf0a2c 10%, #cf0a2c 90%, rgba(207,10,44,0) 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to right, rgba(207,10,44,0) 0%, #cf0a2c 10%, #cf0a2c 90%, rgba(207,10,44,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  padding: 2px 15px;
-}
-header .timeline-element.active .timeline-hint,
-header .timeline-element:hover .timeline-hint {
-  top: -10px;
 }
 header .timeline-element.active .timeline-number {
   background: transparent url("../../static/images/timeline-active.svg") no-repeat 50% 50%;
-}
-header .timeline-element:hover .timeline-hint {
-  z-index: 1;
 }
 header .timeline-hint {
   display: none;
@@ -270,7 +258,7 @@ header .timeline-number {
   text-decoration: none;
 }
 header .timeline-number:hover {
-  color: #fff;
+  color: #fefefe;
 }
 .footer-image {
   position: relative;

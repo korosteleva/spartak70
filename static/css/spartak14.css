@@ -60,18 +60,14 @@
     text-align: left;
     padding-left: 0;
   }
-}
-.kanareykin-wrapper .image-capture {
-  position: absolute;
-  top: 50%;
-  right: 50px;
-  -webkit-transform: translateX(0) translateY(-150%);
-          transform: translateX(0) translateY(-150%);
-}
-@media (max-width: 960px) {
   .kanareykin-wrapper .image-capture {
     display: none;
   }
+}
+.kanareykin-wrapper .image-capture {
+  position: absolute;
+  bottom: 0;
+  left: 40px;
 }
 .kanareykin-text {
   text-align: center;

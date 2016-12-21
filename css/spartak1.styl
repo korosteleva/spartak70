@@ -67,11 +67,12 @@
     top headerHeight
     left 0
     right 0
-    background-repeat no-repeat
-    background-position 50% 0
-    padding-bottom 60%
-    background-size cover
-    transition all .3s
+
+    &-element
+        display none
+
+        &.active
+            display block
 
     &-bg
         position absolute

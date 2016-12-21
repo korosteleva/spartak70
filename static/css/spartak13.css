@@ -102,6 +102,7 @@
   .quote-branko .image-capture {
     bottom: 25px;
     left: 50%;
+    right: auto;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
   }

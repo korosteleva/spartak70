@@ -41,6 +41,7 @@
   position: absolute;
   bottom: -60px;
   right: -150px;
+  z-index: 1;
 }
 @media (max-width: 720px) {
   .quote-boldin {
@@ -48,12 +49,8 @@
   }
 }
 .spartak10-triangle {
-  position: relative;
-}
-.spartak10-triangle:before {
-  content: '';
   position: absolute;
-  top: 0;
+  top: 1px;
   left: 0;
   width: 0;
   right: 0;
@@ -63,4 +60,18 @@
   border-color: transparent transparent #000 transparent;
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
+}
+.spartak10-triangle-wrapper {
+  position: relative;
+}
+.spartak10-triangle-wrapper:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  left: 0;
+  right: 0;
+  background: #000;
+  height: 500px;
 }

@@ -92,12 +92,12 @@
   top: 64px;
   left: 0;
   right: 0;
-  background-repeat: no-repeat;
-  background-position: 50% 0;
-  padding-bottom: 60%;
-  background-size: cover;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+}
+.gallery-element {
+  display: none;
+}
+.gallery-element.active {
+  display: block;
 }
 .gallery-bg {
   position: absolute;

@@ -1,0 +1,145 @@
+@-webkit-keyframes fade {
+  from {
+    -webkit-transform: translateY(0.25em);
+            transform: translateY(0.25em);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    -webkit-transform: translateY(0.25em);
+            transform: translateY(0.25em);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+.quote-gasek {
+  float: right;
+  position: relative;
+  width: 140px;
+  height: 310px;
+  left: 19px;
+  top: -45px;
+}
+.quote-gasek img {
+  width: 340px;
+}
+.quote-gasek .image-capture {
+  position: absolute;
+  bottom: -118px;
+  right: -134px;
+}
+.quote-il {
+  float: right;
+  position: relative;
+  width: 140px;
+  height: 350px;
+  left: 29px;
+  top: 5px;
+}
+@media (max-width: 1040px) {
+  .quote-il {
+    display: none;
+  }
+}
+.quote-il img {
+  width: 344px;
+}
+.quote-il .image-capture {
+  position: absolute;
+  bottom: -41px;
+  right: -150px;
+}
+.quote-branko {
+  float: left;
+  position: relative;
+  width: 140px;
+  height: 450px;
+  left: -423px;
+  top: 83px;
+}
+.quote-branko-wrapper {
+  text-align: center;
+}
+@media (max-width: 960px) {
+  .quote-branko-wrapper {
+    text-align: left;
+  }
+}
+.quote-branko img {
+  width: 560px;
+}
+.quote-branko .image-capture {
+  position: absolute;
+  bottom: 52px;
+  right: -262px;
+}
+@media (max-width: 960px) {
+  .quote-gasek,
+  .quote-branko {
+    float: none;
+    left: 0;
+    top: 0;
+    height: 450px;
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+  .quote-gasek img,
+  .quote-branko img {
+    max-width: 100%;
+  }
+  .quote-gasek .image-capture,
+  .quote-branko .image-capture {
+    bottom: 25px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+@media (max-width: 480px) {
+  .quote-branko {
+    height: 300px;
+  }
+}
+.spartak13-wrapper {
+  background-color: #a00a24;
+}
+.spartak13-wrapper .highlight {
+  margin-bottom: 0;
+}
+.spartak13-wrapper .riga-wrapper {
+  position: relative;
+}
+.spartak13-wrapper .riga-wrapper .full-width {
+  position: relative;
+}
+.spartak13-wrapper .riga-wrapper-bg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  background: #fefefe;
+}
+.spartak13-wrapper .riga-wrapper .image-capture {
+  position: absolute;
+  right: 33px;
+  top: 28px;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+}
+@media (max-width: 720px) {
+  .spartak13-wrapper .riga-wrapper .image-capture {
+    display: none;
+  }
+}

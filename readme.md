@@ -1,6 +1,6 @@
 # Спецпроект "Спартак 70"
 
-https://korosteleva.github.io/spartak70/1
+https://korosteleva.github.io/spartak70/
 
 
 Инициализация
